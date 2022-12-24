@@ -1,0 +1,54 @@
+{
+	"id": "<block entity id",
+	"data": [
+		{
+			"name": "<nbt tag name>",
+			"type": "<nbt tag type>",
+			"value": "<forced value>",
+			"default": "<default value>",
+			"optional": true, // true if tag is optional, ignored if false
+			"doMultiple": true, // true if tag could appear multiple times, ignored if false
+			"content": [
+				{
+					"<values or nbt tags under it>"
+				}
+			], //only exist if type is TAG_Compound or TAG_List
+			"range": {
+				"min": "<minimum value>",
+				"max": "<maximum value>"
+			},
+			"range": [
+				"<list of possible values>"
+			]
+		}
+	],
+	"blocks": [
+		"<list of blocks that use the block entity"
+	]
+}
+# format of mc_block_list.json
+{
+	"id": "<block id>",
+	"blockstates": [
+		{
+			"name": "<blockstate name>",
+			"values": [
+				"<list of possible values>"
+			],
+			"default": "<default value>"
+		}
+	]
+}
+# format of mc_fluid_list.json
+{
+	"id": "<fluid id>",
+	"fluidstates": [
+		{
+			"name": "<fluidstate name>",
+			"values": [
+				"<list of possible values>"
+			],
+			"default": "<default value>"
+		}
+	]
+}
